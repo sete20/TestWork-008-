@@ -1,0 +1,648 @@
+{
+	"info": {
+		"_postman_id": "b05e4474-33ad-4cf4-aba0-6dbd0f679f60",
+		"name": "task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15244205"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "create category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "testtest",
+									"type": "text"
+								},
+								{
+									"key": "photos[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/Administrator/Desktop/3d414e29-c77f-4f24-b3f8-96e62e0db763.jpg",
+										"/C:/Users/Administrator/Desktop/7768c118-26c5-4363-b456-c5732f1dca19.jpg",
+										"/C:/Users/Administrator/Desktop/277696223_369019631788511_2624987767430485971_n.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "NNksjCFz1deR0j2JUG8uWnItOnYERie0E4aAhPXjuIz3oNdtzWXwD6h3PEhuLQv818YZjD5qKjMgZy0SeVtdBkl5ta",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "testestestest",
+									"type": "text"
+								},
+								{
+									"key": "photos[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/Administrator/Desktop/3d414e29-c77f-4f24-b3f8-96e62e0db763.jpg",
+										"/C:/Users/Administrator/Desktop/7768c118-26c5-4363-b456-c5732f1dca19.jpg",
+										"/C:/Users/Administrator/Desktop/277696223_369019631788511_2624987767430485971_n.jpg"
+									]
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search categories",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "get  products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/product",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/product/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create product",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						]
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "details",
+									"value": "testtest",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "photos[]",
+									"type": "file",
+									"src": [
+										"/C:/Users/Administrator/Desktop/7768c118-26c5-4363-b456-c5732f1dca19.jpg",
+										"/C:/Users/Administrator/Desktop/pifcflip-1653398833496.png"
+									]
+								},
+								{
+									"key": "categories_id[]",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/product",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/product/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "tQ3jvUR97hbiuwjAW8szToW6VaWvXwLnfz1iXbvaWacPLrJjdLA8zFdteFwlOztdOIgyJ4yc4NPQKFkUoExGQh38FN",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/product/search?q=test",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"product",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user@email.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						},
+						"description": "login collection"
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "Jm5NtSF0tndVdsGWnJ7rbgw09c9z3GljeyDyyZZXJTIYatQ6RKYdBGwRyNav6Sz6dx2YLCyyC4KxQnvdij1Yevoy3x",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
